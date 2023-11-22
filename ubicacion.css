@@ -1,0 +1,195 @@
+
+*{margin: 0;
+    padding: 0;}
+    header{
+        width: 100%;
+        background: rgb(8, 8, 8);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        z-index: 1000;
+        list-style: none;
+    }
+    header a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    }
+.container h1{
+        font-family: 'Titan One', sans-serif;
+        text-align: center;
+        font-size: 80px;
+        color: rgb(51, 51, 51);
+    
+}
+.ubi h1 {
+    text-align: center;
+        font-size: 40px;
+        margin-right: 0;
+        color: rgb(51, 51, 51);
+        color: azure;
+        padding-top: 55px;
+
+}
+.ubi{
+    background-color: black;
+}
+.content {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    font-family: 'Nanum Gothic Coding', monospace;
+    color:rgb(0, 0, 0);
+    
+}
+
+
+
+section{
+    padding:1rem 0% ;
+   
+}
+.home{ 
+    text-align: center;
+    background: url(/index/ubi.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .image img{
+    margin-top: 0px;
+    width: 50%;
+    
+    animation:float 3s linear infinite;
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(4rem);
+    }
+}
+.home .content h3{
+    font-size: 5rem;
+    color: aqua;
+}
+.home .content p{
+    font-size: 1.5rem;
+}
+.ubi iframe{
+    margin: auto;
+    width: 100%;
+    height: 500px;
+}
+
+.redes{
+    
+    width: 100%;
+    background-color: black;
+}
+
+
+
+
+  .buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+
+
+
+
+/*
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(240, 240, 240);
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: #fff;
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    transition: all .3s ease-out;
+}
+.icon:hover{
+    width: 400px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+.icon:hover i{
+    color: #fff;
+}
+.icon .fa-facebook-f{
+    color: #1A6ED8;
+}
+.fb:hover{
+    background: #1A6ED8;
+}
+.icon .fa-twitter{
+    color: #1DA1F2;
+}
+.twt:hover{
+    background: #1DA1F2;
+}
+.icon .fa-linkedin-in{
+    color: #0077B5;
+}
+.lnk:hover{
+    background: #0077B5;
+}
+.icon .fa-github{
+    color: #000;
+}
+.git:hover{
+    background: #000;
+}
+.icon .fa-youtube{
+    color: #FE0000;
+}
+.yt:hover{
+    background: #FE0000;
+}
+
+/* responsive */
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .main{
+        flex-direction: column;
+    }
+}

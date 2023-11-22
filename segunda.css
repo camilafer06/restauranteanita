@@ -1,0 +1,533 @@
+*{
+  text-decoration: none;
+  margin: 0;
+  outline: none;
+  text-transform: capitalize;
+  padding: 0;
+  box-sizing: border-box;
+  }
+ 
+  html{
+      font-size: 72.5%;
+      overflow-x: hidden;
+  }
+
+  .heading{
+      font-size: 4rem;
+      
+      color: rgb(253, 253, 253);
+      text-align: center;
+      padding: 6rem 1rem 0 0;
+      letter-spacing: .9rem;
+      font-weight: 900;
+      margin: auto;
+  }
+  
+  header{
+      width: 100%;
+      background: rgb(8, 8, 8);
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      transition: .2s;
+  
+  }
+  
+  header ul{
+      gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+   header .navbar ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+  }
+  header .navbar ul li{
+      margin: 0 1rem;
+  }
+  
+   header .navbar ul li a{
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
+      transition: .2s;
+  
+  }
+  header .navbar ul li .active,
+  header .navbar ul li a:hover{
+      color: rgb(255, 0, 0);
+  
+  }
+  header .logo{
+      font-size: 2.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-family: 'Fredericka the Great', cursive;
+  
+  }
+ 
+  .home {
+  background: url(index/Ciudad_de_Cochabamba.jpg);
+  background-size:cover ;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  height: 1000px;
+  
+  }
+  .home .content {
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      padding-top: 20rem;
+      text-align: center;
+  }
+  .home .content h1{
+    font-family: 'Rampart One', sans-serif;
+      font-size: 10rem;
+      color: rgb(0, 0, 0);
+      text-shadow: 3px 3px 20px #ffffff,
+      -2px 1px 30px #ffffff;
+     
+      
+  }
+  
+  .home .content p {
+      font-family: 'Neucha', cursive;
+      font-size: 3rem;
+      color: rgb(255, 255, 255);
+      text-shadow: 3px 3px 20px #000000,
+    -2px 1px 30px #000000;
+      
+  
+  }
+  
+  .home .content button{
+      height: 5rem;
+      width: 20rem;
+      border-radius: 1rem;
+      background: red;
+      color: rgb(255, 255, 255);
+      font-size: 2rem;
+      cursor: pointer;
+      transition: .2s;
+      box-shadow: 0 .3rem 1rem rgb(255, 252, 252);
+      margin: 4rem;
+      border-color: rgb(255, 123, 0);
+  }
+  .home .content button:hover {
+  background: black;
+  border: .2rem solid red;
+  font-family: 'Leckerli One', cursive;
+  }
+  .product h1{
+      text-align: center;
+      margin: auto;
+      display: block;
+      margin-bottom: 50px;
+     
+  }
+ 
+  .about{
+      background: #b2aeb2;
+     
+  }
+  .ex{
+      margin-top: 60px;
+      width: 100%;
+      height: 500px;
+      background-size: cover;
+      background-image: url(index/vista-superior-manos-recortadas-cocinero-senior-corte-irreconocible-zanahoria-cocinar-estofado-verduras.jpg);
+  }
+  .extras{
+      display: flex;
+  }
+.extras .card{
+    
+    margin: auto;
+}
+  .product{
+      background: #1d1d1d;
+  }
+  .course{
+      background: #1d1d1d;
+  }
+  .card {
+      
+      margin: 20px;
+      position: relative;
+      width:350px;
+      height: 245px;
+      background:black;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    
+    .card img{
+  object-fit: cover;
+      width: 410;
+      fill: #333;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    
+    .card:hover {
+      transform: rotate(-5deg) scale(1.1);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #fff;
+      opacity: 0;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    
+    .card:hover .card__content {
+      transform: translate(-50%, -50%) rotate(0deg);
+      opacity: 1;
+          
+    }
+    
+    .card__title {
+      margin: 0;
+      font-size: 40px;
+      color: #333;
+      font-weight: 700;
+      text-align: center;
+    }
+    
+    
+    
+    .card:hover img{
+      scale: 0;
+      transform: rotate(-45deg);
+    }
+    
+  .semanal{
+      display: grid;
+      grid-template-columns:repeat(1fr) ;
+      grid-template-rows:repeat(0.1rem) ;
+      grid-gap: 5px;
+      
+  }
+  
+  .lunes{
+      background-color: rgb(70, 79, 79);
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start:1 ;
+      grid-row-end:2 ;
+      margin: auto;
+      background-position: center;
+  }
+  .imguno{
+    background-image:url(index/manos-sosteniendo-plato-fajita-comida-mexicana.jpg) ;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:1 ;
+    grid-row-end:2 ;
+    background-size: cover;
+   
+}
+.imgdos{
+    background-image:url(index/comida-organica-fruta-fresca-mesa-madera-rustica-ia-generativa.jpg);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:2 ;
+    grid-row-end:3 ;
+    background-size:cover;
+    background-position: center;
+}
+.martes{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:2 ;
+    grid-row-end:3;
+    margin: auto;
+    background-color: rgb(70, 79, 79);
+}
+.imgtres{
+    background-image:url(index/primer-disparo-enfoque-selectivo-carne-frita-verduras-plato.jpg);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:4;
+    grid-row-end:5;
+    background-size:cover;
+    background-position: center;
+}
+.miercoles{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:3 ;
+    grid-row-end:4;
+    margin: auto;
+    background-color: rgb(70, 79, 79);
+}
+.imgcuatro{
+    background-image:url(index/delicioso-estofado-goulash-mesa.jpg);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:3;
+    grid-row-end:4;
+    background-size:cover;
+    background-position: center;
+}
+.jueves{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:4;
+    grid-row-end:5;
+    margin: auto;
+    background-color: rgb(70, 79, 79);
+}
+.imgcinco{
+    background-image:url(index/vista-lateral-sopa-pollo-cebolla-pepinos-especias-mesa.jpg);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:5;
+    grid-row-end:6;
+    background-size:cover;
+    background-position: center;
+}
+.viernes{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:5 ;
+    grid-row-end:6;
+    margin: auto;
+    background-color: rgb(70, 79, 79);
+}
+
+.sabado{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:6;
+    grid-row-end:7;
+    margin: auto;
+    background-color: rgb(70, 79, 79);
+}
+.imgseis{
+    background-image:url(index/pollo-frito-papas-fritas-sobre-piso-cemento-negro.jpg);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:6;
+    grid-row-end:7;
+    background-size:cover;
+    background-position: center;
+}
+.semanal h1{
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 35px;
+    font-family: 'Bad Script', cursive;
+    letter-spacing: 8px;
+    margin-bottom: 0%;
+}
+.semanal h2{
+    font-family: 'Calligraffitti', cursive;
+    font-size: 2rem;
+    margin: 25px;
+    color: aliceblue;
+    letter-spacing: 5px;
+}
+.semanal p{
+    font-family: 'Calligraffitti', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 5px;
+    margin-top: 0%;
+}
+
+.semanal img{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+  .bebidas{
+    width:250px;
+    height: 300px;
+    background: rgba(214, 82, 6, 0.58);
+    border: 1px solid rgb(248, 133, 2);
+    box-shadow: 12px 17px 51px rgba(192, 9, 9, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 50px;
+  }
+  .beb{
+      display: flex;
+   
+  }
+  .bebidas img{
+      object-fit: cover;
+      height: 280px;
+      width: 230px;
+      padding: 20px;
+  }
+  
+  .bebidas:hover {
+    border: 3px solid black;
+    transform: scale(1.05);
+  }
+  
+  .bebidas:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  
+  @media(max-width:767px){
+ 
+      .navbar{
+          display: none;
+      }
+      .beb{
+          display: block;
+      }
+      .product{margin: auto;}
+      .semanal{
+         display: block;
+          
+      }
+      .semanal img{ 
+          width: 40%;
+
+    }
+    .extras{
+        display: block;
+    }
+    .extras .card{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+      header ul{
+flex-direction: column;
+align-items:end;
+width: 100%;
+      }
+      .navbar{
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 2rem;
+          background-color: #333;
+          bottom: 0;
+          left: 0;
+          
+      }
+      .navbar li a{
+          color: #ffffff;
+      }
+      .home .content {
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        padding-top: 20rem;
+        text-align: center;
+    }
+    .home .content h1{
+      font-family: 'Rampart One', sans-serif;
+        font-size: 3.5rem;
+        color: rgb(0, 0, 0);
+        text-shadow: 3px 3px 20px #ffffff,
+        -2px 1px 30px #ffffff;
+       
+        
+    }
+    
+    
+    
+  }
+
+
+  @media(max-width:1023px){
+ 
+    .navbar{
+        display: none;
+    }
+    .beb{
+        display: block;
+        
+    }
+    .bebidas{margin: auto;
+    margin-bottom: 5%;}
+    .product{margin: auto;}
+    
+        
+    
+    .semanal img{ 
+        width: 40%;
+
+  }
+  .extras{
+      display: block;
+  }
+  .extras .card{
+    
+      width: 80%;
+      margin-bottom: 5%;
+  }
+.extras .card img{
+    width: 70%;
+}
+    header ul{
+flex-direction: column;
+align-items:end;
+width: 100%;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+        background-color: #333;
+        bottom: 0;
+        left: 0;
+        
+    }
+    .navbar li a{
+        color: #ffffff;
+    }
+    .home .content {
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      padding-top: 20rem;
+      text-align: center;
+  }
+  .home .content h1{
+    font-family: 'Rampart One', sans-serif;
+      font-size: 3.5rem;
+      color: rgb(0, 0, 0);
+      text-shadow: 3px 3px 20px #ffffff,
+      -2px 1px 30px #ffffff;
+     
+      
+  }
+  
+  
+  
+}
